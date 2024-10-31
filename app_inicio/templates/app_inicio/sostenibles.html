@@ -1,0 +1,345 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>DIA MUNDIAL DE LAS CIUDADES Y COMUNIDADES SOSTENIBLES</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static "assets/cbtislogo.ico" %}" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://esfonts.pro/fuente/geomanist" rel="stylesheet" type="text/css">
+
+    <link href="{% static "css/styles.css" %}" rel="stylesheet" />
+    <link href="{% static "css/modal.css" %}" rel="stylesheet" />
+    <style>
+        .timeline-image {
+            width: 170px;
+            height: 170px;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .timeline-image-fill {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="https://cbtis150.edu.mx/">
+                <img src="{% static 'assets/img/cbtis.png' %}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menú
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">AMA DGETI</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Días Mundiales</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownDiasMundiales">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial de la Educación Ambiental</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial de la Salud</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Internacional de la Tierra</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial de la Población</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial del Medio Ambiente</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Internacional de la Paz</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Internacional de la Ciudades Educadoras</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial de la Alimentación</a></li>
+                            <li><a class="dropdown-item" href="{% url "sostenibles" %}">Día Mundial de las
+                                    Comunidades y Ciudades Sostenibles</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#errorModal">Día Mundial de los Derechos Humanos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Tablas de datos</a>
+                        <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                            <li>
+                                <a href="{% url "ciudad_list" %}" class="dropdown-item item-anchor">Ciudades
+                                    sostenibles</a>
+                            </li>
+                            <li>
+                                <a href="{% url "proyecto_list" %}" class="dropdown-item item-anchor">Proyectos
+                                    sustentables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url "about" %}">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url "lista_comentarios" %}">Comentarios</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="cabecera-inicio">
+        <div class="container">
+            <br><br>
+            <div class="masthead-heading text-uppercase">"Día Mundial de las Ciudades y Comunidades Sostenibles"</div>
+        </div>
+    </header>
+    <main style="padding-top: 50px;">
+        <section class="page-section" id="services">
+            <div class="container" style="text-align: justify;">
+                <div class="text-justify">
+
+                    <h2 class="section-heading text-uppercase" style="text-align: center;">¿Qué es?</h2>
+
+                    <p>El Día Mundial de las Ciudades y Comunidades Sostenibles es una celebración
+                        que se lleva a cabo el 31 de octubre de cada año. Esta fecha fue proclamada por
+                        las Naciones Unidas en 2013 como parte de la Agenda 2030 para el Desarrollo
+                        Sostenible, específicamente enfocándose en el Objetivo de Desarrollo Sostenible (ODS)
+                        número 11: "Lograr que las ciudades y los asentamientos humanos sean inclusivos,
+                        seguros, resilientes y sostenibles".
+                    </p>
+                    <p>Se busca promover el desarrollo inclusivo, mejorar la calidad de vida y abordar
+                        desafíos como el cambio climático y la urbanización.
+                    </p>
+                    <h2 class="section-heading text-uppercase">Objetivos del Día Mundial de las Ciudades y Comunidades
+                        Sostenibles</h2>
+                    <br>
+                    <ol>
+                        <li><b>Conciencia:</b> Se busca aumentar la conciencia sobre la importancia de la urbanización
+                            sostenible y cómo las ciudades pueden contribuir al desarrollo sostenible.</li>
+                        <li><b>Intercambio de Ideas:</b> Facilitar el intercambio de experiencias y buenas prácticas
+                            entre
+                            ciudades y comunidades.</li>
+                        <li><b>Fomentar la Participación:</b> Promover la participación activa de los ciudadanos en el
+                            desarrollo urbano y la sostenibilidad.</li>
+                        <li><b>Impulsar Políticas:</b> Incentivar a los gobiernos locales a implementar políticas que
+                            favorezcan entornos urbanos sostenibles.</li>
+                    </ol>
+                    <p><b>Fuente:</b>Gobierno de México. "Día Mundial De Las Ciudades". <a
+                            href="https://www.gob.mx/inafed/articulos/31-de-octubre-dia-mundial-de-las-ciudades-a-mejor-ciudad-mejor-calidad-de-vida#:~:text=Este%2031%20de%20octubre%20es,inter%C3%A9s%20en%20el%20urbanismo%20sostenible">Consulte aquí</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Días Mundiales Relacionados</h2>
+                </div>
+                <br><br>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill" src="{% static "assets/dias/Dia 1.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>26 de Enero</h4>
+                                <h4 class="subheading">Día Mundial de la Educación Ambiental</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Fomenta la educación ambiental en comunidades, fundamental para
+                                    promover prácticas sostenibles.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 2.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>7 de Abril</h4>
+                                <h4 class="subheading">Día Mundial de la Salud</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Destaca la importancia de la salud pública y la necesidad de
+                                    entornos
+                                    saludables en comunidades urbanas.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill"
+                                src="{%static 'assets/dias/Dia 3.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>22 de Abril</h4>
+                                <h4 class="subheading">Día Internacional de la Tierra</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Celebra el planeta y promueve la acción ambiental y la
+                                    sostenibilidad,
+                                    relevante para entornos urbanos.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 5.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>5 de Junio</h4>
+                                <h4 class="subheading">Día Mundial del Medio Ambiente</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Este día se centra en la sensibilización sobre temas ambientales y
+                                    la
+                                    promoción de acciones para proteger el medio ambiente.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 4.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>11 de Julio</h4>
+                                <h4 class="subheading">Día Mundial de la Población</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Se centra en los desafíos demográficos y su impacto en el
+                                    desarrollo
+                                    sostenible, especialmente en áreas urbanas.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 6.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>21 de Septiembre</h4>
+                                <h4 class="subheading">Día Internacional de la Paz</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Fomenta la paz y el desarrollo sostenible, reconociendo la
+                                    importancia
+                                    de comunidades seguras y pacíficas.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 8.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>16 de Octubre</h4>
+                                <h4 class="subheading">Día Mundial de la Alimentación</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Se dedica a la lucha contra el hambre y la promoción de sistemas
+                                    alimentarios sostenibles, esenciales para las comunidades urbanas.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 7.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>30 de Noviembre</h4>
+                                <h4 class="subheading">Día Internacional de las Ciudades Educadoras</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Promueve el papel de las ciudades en la educación para la
+                                    sostenibilidad y el desarrollo social.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline-image-fill timeline-image-fill" src="{% static "assets/dias/Dia 9.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>10 de Diciembre</h4>
+                                <h4 class="subheading">Día Mundial de los Derechos Humanos</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Promueve el respeto y la protección de los derechos humanos,
+                                    incluyendo el derecho a un ambiente sostenible.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                <a href="https://verdesdigitales.com/2024/01/03/calendario-ambiental-2024/" style="color: white;" class="text-center">Más<br>información<br>aquí</a>
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">&copy; Derechos Reservados 2024</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/cbtis150cmb"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> <br>
+                        Facebook
+                </div>
+                <div class="col-lg-4 text-lg-start">Centro de Bachillerato Tecnológico Industrial y de Servicios No. 150</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownToggles = document.querySelectorAll('.navbar-expand-lg .navbar-nav .dropdown-toggle');
+
+            function toggleDropdown(event) {
+                if (window.innerWidth <= 991.98) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    var dropdown = this.closest('.dropdown');
+                    dropdown.classList.toggle('show');
+                }
+            }
+
+            dropdownToggles.forEach(function(toggle) {
+                toggle.addEventListener('click', toggleDropdown);
+            });
+        });
+    </script>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Ups!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Página en construcción. <br> Gracias por su comprensión.</p>
+                    <center>
+                        <img src="{% static 'assets/img/error.gif' %}" alt="Error GIF" class="img-fluid">
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

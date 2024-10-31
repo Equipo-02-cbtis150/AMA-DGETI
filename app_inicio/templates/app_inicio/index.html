@@ -1,0 +1,283 @@
+{% extends "layouts/navbase.html" %}
+{% load static %}
+{% block contenido %}
+<main>
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase">AMA DGETI</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Continuar</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="swiper-container centered-swiper">
+            <h3 class="text-center">"Noticias Relevantes"</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="news-item carrusel-item">
+                        <a href="{% url "sostenibles" %}">
+                            <img src="{% static 'assets/img/4carrusel.jpeg' %}" alt="Descripción de la imagen">
+                            <p>Día Mundial de las Ciudades y Comunidades Sostenibles</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-item carrusel-item">
+                        <a href="{% url "sostenibles" %}">
+                            <img src="{% static 'assets/img/1carrusel.jpeg' %}" alt="Descripción de la imagen">
+                            <p>Día Mundial de las Ciudades y Comunidades Sostenibles</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-item carrusel-item">
+                        <a href="{% url "sostenibles" %}">
+                            <img src="{% static 'assets/img/3carrusel.jpeg' %}" alt="Descripción de la imagen">
+                            <p>Día Mundial de las Ciudades y Comunidades Sostenibles</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-item carrusel-item">
+                        <a href="{% url "sostenibles" %}">
+                            <img src="{% static 'assets/img/2carrusel.jpg' %}" alt="Descripción de la imagen">
+                            <p>Día Mundial de las Ciudades y Comunidades Sostenibles</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Agrega más swiper-slide según sea necesario -->
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">¿En qué consiste AMA DGETI?</h2>
+            </div>
+            <p class="text-center">Las siglas <b>AMA</b> (Acciones por el Medio Ambiente) es un programa orientado en
+                despertar la conciencia en el cuidado del medio ambiente por parte de la comunidad estudiantil. El
+                proyecto AMA-DGETI está diseñado para mejorar la formación de los estudiantes en instituciones de
+                educación técnica, CBTis 150. Este programa busca desarrollar habilidades y aprender del cuidado de las
+                áreas verdes dentro y fuera del establecimiento.</p>
+        </div>
+    </section>
+
+    <section id="faq" class="faq section" style="padding-top: 0;">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="text-center">Plan de Acción Educativo</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <h3>Objetivos</h3>
+                            <div class="faq-content">
+                                <p>Fomentar la creatividad, el trabajo en equipo y la innovación entre los
+                                    estudiantes. Además, busca vincular la educación técnica con las necesidades del sector productivo.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3>Metodología</h3>
+                            <div class="faq-content">
+                                <p>Se basa en el aprendizaje basado en proyectos, donde los estudiantes
+                                    trabajan en iniciativas prácticas que les permiten aplicar lo aprendido en situaciones reales.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3>Áreas de enfoque</h3>
+                            <div class="faq-content">
+                                <p>Incluye diversas áreas técnicas, como informática, electrónica,
+                                    mecánica, y más. Los proyectos pueden variar desde el desarrollo de software hasta la creación de
+                                    prototipos electrónicos.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3>Beneficios</h3>
+                            <div class="faq-content">
+                                <p>Los estudiantes desarrollan habilidades prácticas, mejorando
+                                    su empleabilidad y preparación para el futuro laboral.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3>Colaboraciones</h3>
+                            <div class="faq-content">
+                                <p>A menudo, el proyecto incluye la colaboración con empresas e
+                                    industrias locales para asegurar que los estudiantes estén alineados con las demandas del mercado.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                    </div>
+                </div><!-- End Faq Column-->
+            </div>
+        </div>
+    </section><!-- /Faq Section -->
+
+
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Proyectos de AMA DGETI</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/proyAMAdias.png' %}" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Días Mundiales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/proyAMAreciclaje.jpg' %}" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Reciclaje</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/proyAMAreforeestacion.jpg' %}"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Reforestación</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Días Mundiales</h3>
+                                <img class="img-fluid d-block mx-auto" src=" {% static 'assets/img/proyAMAdias.png' %}"
+                                    alt="..." />
+                                <p>Se centra en conmemorar y crear conciencia sobre diversas fechas internacionales y
+                                    temáticas relevantes. Esto puede incluir actividades, campañas o presentaciones que
+                                    aborden temas como la salud, el medio ambiente, los derechos humanos, entre otros.
+                                    La idea es fomentar la participación de los estudiantes y la comunidad en general,
+                                    promoviendo el aprendizaje y la reflexión sobre estos asuntos importantes.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Reciclaje</h3>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="{% static 'assets\img\proyAMAreciclaje.jpg' %}" alt="..." />
+                                <p>Este tema busca fomentar la separación y reutilización de materiales para reducir la
+                                    generación de residuos. A través de campañas de educación y talleres, los
+                                    estudiantes aprenden sobre la importancia de reciclar papel, plástico, vidrio y
+                                    metales, así como las técnicas adecuadas para hacerlo. El objetivo es reducir la
+                                    contaminación y promover prácticas sostenibles en la comunidad.
+                                </p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Reforestación</h3>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="{% static 'assets/img/proyAMAreforeestacion.jpg' %}" alt="..." />
+                                <p>La reforestación se centra en la recuperación de áreas afectadas por la deforestación
+                                    y la pérdida de vegetación. El proyecto implica actividades como la plantación de
+                                    árboles y la restauración de ecosistemas locales. Se busca sensibilizar a los
+                                    estudiantes sobre la importancia de los árboles para el medio ambiente, ya que
+                                    contribuyen a la mejora de la calidad del aire, la conservación del agua y la
+                                    biodiversidad.
+                                </p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    document.getElementById("titulo").innerText = "AMA DGETI";
+</script>
+{% endblock contenido %}

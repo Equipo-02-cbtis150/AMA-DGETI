@@ -1,0 +1,47 @@
+/* Estilos para el modal de error */
+#errorModal .modal-content {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#errorModal .modal-header {
+    background-color: #ff6b6b;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#errorModal .modal-title {
+    font-weight: bold;
+}
+
+#errorModal .modal-body {
+    padding: 2rem;
+}
+
+#errorModal .modal-body p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#errorModal .modal-body img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#errorModal .modal-footer {
+    border-top: none;
+}
+
+#errorModal .btn-secondary {
+    background-color: #4ecdc4;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#errorModal .btn-secondary:hover {
+    background-color: #45b7aa;
+}
